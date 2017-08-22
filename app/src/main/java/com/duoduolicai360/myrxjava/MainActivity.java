@@ -11,10 +11,14 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.duoduolicai360.myrxjava.base.BaseActivity;
+import com.duoduolicai360.myrxjava.base.BaseViewPagerAdapter;
 import com.duoduolicai360.myrxjava.constant.GlobalConfig;
+import com.duoduolicai360.myrxjava.module.rxjava2.operators.OperatorsFragment;
+import com.duoduolicai360.myrxjava.module.rxjava2.usecases.UseCasesFragment;
 import com.duoduolicai360.myrxjava.utils.ScreenUtil;
 
 import butterknife.BindView;
+import butterknife.OnClick;
 
 public class MainActivity extends BaseActivity {
 
@@ -52,6 +56,13 @@ public class MainActivity extends BaseActivity {
                 GlobalConfig.CATEGORY_NAME_EXAMPLES
         };
 
+        BaseViewPagerAdapter pagerAdapter = new BaseViewPagerAdapter(getSupportFragmentManager(),titles);
+        pagerAdapter.addFragment(new OperatorsFragment());
+        pagerAdapter.addFragment(new UseCasesFragment());
+
+        mViewPager.setAdapter(pagerAdapter);
+        mTabLayout.setupWithViewPager(mViewPager);
+
 
     }
 
@@ -60,6 +71,16 @@ public class MainActivity extends BaseActivity {
         toolbar.setTitle(title);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(homeAsUpEnabled);
+    }
+
+    @OnClick(R.id.fab)
+    public void onViewClicked(){
+
+    }
+
+    @Override
+    protected boolean translucentStatusBar() {
+        return true;
     }
 
 }

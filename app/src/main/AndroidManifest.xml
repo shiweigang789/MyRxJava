@@ -9,13 +9,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".module.rxjava2.operators.item.RxCreateActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxZipActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxMapActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxFlatMapActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxConcatMapActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxDoOnNextActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxFilterActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxSkipActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxTakeActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxTimerActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxIntervalActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxJustActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxSingleActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxConcatActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxDistinctActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxBufferActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxDebounceActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxDeferActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxLastActivity"/>
     </application>
 
 </manifest>
