@@ -1,7 +1,17 @@
 package com.duoduolicai360.myrxjava.module.rxjava2.usecases;
 
+import android.content.Intent;
+
 import com.duoduolicai360.myrxjava.model.OperatorModel;
 import com.duoduolicai360.myrxjava.module.rxjava2.CategoryBaseFragment;
+import com.duoduolicai360.myrxjava.module.rxjava2.thread.RxThreadActivity;
+import com.duoduolicai360.myrxjava.module.rxjava2.usecases.concat.RxCaseConcatActivity;
+import com.duoduolicai360.myrxjava.module.rxjava2.usecases.debounce.RxCaseDebounceActivity;
+import com.duoduolicai360.myrxjava.module.rxjava2.usecases.fastNetwork.RxNetworkActivity;
+import com.duoduolicai360.myrxjava.module.rxjava2.usecases.flatMap.RxCaseFlatMapActivity;
+import com.duoduolicai360.myrxjava.module.rxjava2.usecases.interval.RxCaseIntervalActivity;
+import com.duoduolicai360.myrxjava.module.rxjava2.usecases.okHttp.RxNetSingleActivity;
+import com.duoduolicai360.myrxjava.module.rxjava2.usecases.zip.RxCaseZipActivity;
 
 import java.util.ArrayList;
 
@@ -48,29 +58,29 @@ public class UseCasesFragment extends CategoryBaseFragment {
     protected void itemClick(int position) {
         switch (position) {
             case 0:
-//                startActivity(new Intent(getActivity(), RxNetSingleActivity.class));
+                startActivity(new Intent(getActivity(), RxNetSingleActivity.class));
                 break;
-//            case 1:
-//                startActivity(new Intent(getActivity(), RxNetworkActivity.class));
-//                break;
-//            case 2:
-//                startActivity(new Intent(getActivity(), RxCaseZipActivity.class));
-//                break;
-//            case 3:
-//                startActivity(new Intent(getActivity(), RxCaseFlatMapActivity.class));
-//                break;
-//            case 4:
-//                startActivity(new Intent(getActivity(), RxCaseConcatActivity.class));
-//                break;
-//            case 5:
-//                startActivity(new Intent(getActivity(), RxCaseDebounceActivity.class));
-//                break;
-//            case 6:
-//                startActivity(new Intent(getActivity(), RxCaseIntervalActivity.class));
-//                break;
-//            case 7:
-//                startActivity(new Intent(getActivity(), RxThreadActivity.class));
-//                break;
+            case 1:
+                startActivity(new Intent(getActivity(), RxNetworkActivity.class));
+                break;
+            case 2:
+                startActivity(new Intent(getActivity(), RxCaseZipActivity.class));
+                break;
+            case 3:
+                startActivity(new Intent(getActivity(), RxCaseFlatMapActivity.class));
+                break;
+            case 4:
+                startActivity(new Intent(getActivity(), RxCaseConcatActivity.class));
+                break;
+            case 5:
+                startActivity(new Intent(getActivity(), RxCaseDebounceActivity.class));
+                break;
+            case 6:
+                startActivity(new Intent(getActivity(), RxCaseIntervalActivity.class));
+                break;
+            case 7:
+                startActivity(new Intent(getActivity(), RxThreadActivity.class));
+                break;
         }
     }
 }
