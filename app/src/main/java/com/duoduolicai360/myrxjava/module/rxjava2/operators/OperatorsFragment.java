@@ -6,7 +6,10 @@ import android.content.Intent;
 import com.duoduolicai360.myrxjava.R;
 import com.duoduolicai360.myrxjava.model.OperatorModel;
 import com.duoduolicai360.myrxjava.module.rxjava2.CategoryBaseFragment;
+import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxAsyncSubjectActivity;
+import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxBehaviorSubjectActivity;
 import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxBufferActivity;
+import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxCompletableActivity;
 import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxConcatActivity;
 import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxConcatMapActivity;
 import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxCreateActivity;
@@ -16,14 +19,20 @@ import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxDistinctActiv
 import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxDoOnNextActivity;
 import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxFilterActivity;
 import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxFlatMapActivity;
+import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxFlowableActivity;
 import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxIntervalActivity;
 import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxJustActivity;
 import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxLastActivity;
 import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxMapActivity;
+import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxMergeActivity;
+import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxPublishSubjectActivity;
+import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxReduceActivity;
+import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxScanActivity;
 import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxSingleActivity;
 import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxSkipActivity;
 import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxTakeActivity;
 import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxTimerActivity;
+import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxWindowActivity;
 import com.duoduolicai360.myrxjava.module.rxjava2.operators.item.RxZipActivity;
 
 import java.util.ArrayList;
@@ -134,33 +143,33 @@ public class OperatorsFragment extends CategoryBaseFragment {
             case 18:
                 startActivity(new Intent(getActivity(), RxLastActivity.class));
                 break;
-//            case 19:
-//                startActivity(new Intent(getActivity(), RxMergeActivity.class));
-//                break;
-//            case 20:
-//                startActivity(new Intent(getActivity(), RxReduceActivity.class));
-//                break;
-//            case 21:
-//                startActivity(new Intent(getActivity(), RxScanActivity.class));
-//                break;
-//            case 22:
-//                startActivity(new Intent(getActivity(), RxWindowActivity.class));
-//                break;
-//            case 23:
-//                startActivity(new Intent(getActivity(), RxPublishSubjectActivity.class));
-//                break;
-//            case 24:
-//                startActivity(new Intent(getActivity(), RxAsyncSubjectActivity.class));
-//                break;
-//            case 25:
-//                startActivity(new Intent(getActivity(), RxBehaviorSubjectActivity.class));
-//                break;
-//            case 26:
-//                startActivity(new Intent(getActivity(), RxCompletableActivity.class));
-//                break;
-//            case 27:
-//                startActivity(new Intent(getActivity(), RxFlowableActivity.class));
-//                break;
+            case 19:
+                startActivity(new Intent(getActivity(), RxMergeActivity.class));
+                break;
+            case 20:
+                startActivity(new Intent(getActivity(), RxReduceActivity.class));
+                break;
+            case 21:
+                startActivity(new Intent(getActivity(), RxScanActivity.class));
+                break;
+            case 22:
+                startActivity(new Intent(getActivity(), RxWindowActivity.class));
+                break;
+            case 23:
+                startActivity(new Intent(getActivity(), RxPublishSubjectActivity.class));
+                break;
+            case 24:
+                startActivity(new Intent(getActivity(), RxAsyncSubjectActivity.class));
+                break;
+            case 25:
+                startActivity(new Intent(getActivity(), RxBehaviorSubjectActivity.class));
+                break;
+            case 26:
+                startActivity(new Intent(getActivity(), RxCompletableActivity.class));
+                break;
+            case 27:
+                startActivity(new Intent(getActivity(), RxFlowableActivity.class));
+                break;
         }
     }
 }

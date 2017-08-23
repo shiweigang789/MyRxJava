@@ -36,6 +36,15 @@
         <activity android:name=".module.rxjava2.operators.item.RxDebounceActivity"/>
         <activity android:name=".module.rxjava2.operators.item.RxDeferActivity"/>
         <activity android:name=".module.rxjava2.operators.item.RxLastActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxMergeActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxReduceActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxScanActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxWindowActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxPublishSubjectActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxAsyncSubjectActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxBehaviorSubjectActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxCompletableActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxFlowableActivity"/>
     </application>
 
 </manifest>
