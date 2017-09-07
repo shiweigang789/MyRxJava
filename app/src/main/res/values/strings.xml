@@ -35,5 +35,7 @@
     <string name="rx_BehaviorSubject">BehaviorSubject</string>
     <string name="rx_Completable">Completable</string>
     <string name="rx_Flowable">Flowable</string>
+    <string name="rx_CompositeDisposable">CompositeDisposable</string>
+
 
 </resources>

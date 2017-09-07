@@ -55,6 +55,7 @@
         <activity android:name=".module.rxjava2.usecases.debounce.RxCaseDebounceActivity"/>
         <activity android:name=".module.rxjava2.usecases.interval.RxCaseIntervalActivity"/>
         <activity android:name=".module.rxjava2.thread.RxThreadActivity"/>
+        <activity android:name=".module.rxjava2.operators.item.RxCompositeDisposable"/>
     </application>
 
 </manifest>
