@@ -1,6 +1,5 @@
 package com.duoduolicai360.myrxjava.module.rxjava2.operators;
 
-
 import android.content.Intent;
 
 import com.duoduolicai360.myrxjava.R;
